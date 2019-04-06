@@ -1,6 +1,6 @@
 <?php
 
-namespace botnyx/simpleObject;
+namespace Botnyx/simpleObject;
 
 interface simpleObjectInterface {
 	public function objectProperties();
