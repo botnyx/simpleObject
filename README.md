@@ -7,7 +7,7 @@ Handy for creating 'configuration objects' which require specific values - or ha
 
 Usage:
 
-<code>
+<pre>
 class myObject extends simpleObject {
 	function objectProperties(){
 		return array(
@@ -18,4 +18,4 @@ class myObject extends simpleObject {
 	
 	
 }
-</code>
+</pre>
