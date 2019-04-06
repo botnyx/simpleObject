@@ -1,7 +1,7 @@
 <?php
-namespace Botnyx\simpleObject;
+namespace Botnyx\SimpleObject;
 
-class simpleObject implements simpleObjectInterface {
+class SimpleObject implements simpleObjectInterface {
 	
 	use simpleObjectTrait;
 	
