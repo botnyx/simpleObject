@@ -1,9 +1,9 @@
 <?php
 namespace Botnyx\SimpleObject;
 
-class SimpleObject implements simpleObjectInterface {
+class SimpleObject implements SimpleObjectInterface {
 	
-	use simpleObjectTrait;
+	use SimpleObjectTrait;
 	
   /*	
     available Validators: 
