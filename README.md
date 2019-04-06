@@ -4,9 +4,7 @@ SimpleObject allows you to create simple objects with minimal (yet sufficient) v
 
 A simpleObject can be created by passing an array, object or json to the constructor.
 
-Or - a empty object can be created, and the properties can be set manually. 
-
-A property can only be set once.
+Once a property is set, it cannot be altered.
 
 
 Handy for creating 'configuration objects' which require specific values - or have default values.
