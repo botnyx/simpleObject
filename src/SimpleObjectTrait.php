@@ -1,10 +1,10 @@
 <?php
 
-namespace Botnyx\simpleObject;
+namespace Botnyx\SimpleObject;
 
 use Respect\Validation\Validator as v;
 
-trait simpleObjectTrait  {
+trait SimpleObjectTrait  {
 	
 	function _isProperty($property){
 		if( !array_key_exists($property,$this->objectProperties()) ){ 
