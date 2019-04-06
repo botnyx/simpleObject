@@ -2,6 +2,13 @@
 
 SimpleObject allows you to create simple objects with minimal (yet sufficient) variable checking.
 
+A simpleObject can be created by passing an array, object or json to the constructor.
+
+Or - a empty object can be created, and the properties can be set manually. 
+
+A property can only be set once.
+
+
 Handy for creating 'configuration objects' which require specific values - or have default values.
 
 
@@ -18,4 +25,10 @@ class myObject extends simpleObject {
 	
 	
 }
+
+
+$MyObject = new myObject( [array/object/json]);
+
+
+
 </pre>
