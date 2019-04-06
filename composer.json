@@ -1,0 +1,25 @@
+{
+    "name": "botnyx/simpleObject",
+    "description": "simpleObject .",
+    "keywords": ["sfe", "composer", "library"],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Jerry Hopper",
+            "email": "hopper.jerry@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+		    "php": ">=7.1",
+        "respect/validation": "^1.1"
+    },
+    "require-dev": {
+		    "phpunit/phpunit": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Botnyx\\simpleObject\\": "src/"
+        }
+    }
+}
