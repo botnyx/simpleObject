@@ -44,13 +44,15 @@ trait SimpleObjectTrait  {
 		if(!isset($this->$property)){ throw new \Exception("Invalid property for Object (`".$p."`)"); }
 		return $this->$property;
 	}
-		
+	function _writeable(){
+		return false;
+	}	
 	function __set($property, $value){
 		//echo "Set property :".$property." to ".$value."<br>";
 		//print_r($value);
 		
 		$this->_isProperty($property);
-		if(isset($this->$property)){ 
+		if(isset($this->$property) && $this->_writeable()==false ){ 
 			throw new \Exception("Property `".$property."` already set.");
 		}
 		//$value['required'];
