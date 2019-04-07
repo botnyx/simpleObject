@@ -1,5 +1,5 @@
 <?php
-namespace Botnyx\SimpleObject;
+namespace Botnyx;
 
 class SimpleObject implements SimpleObjectInterface {
 	
