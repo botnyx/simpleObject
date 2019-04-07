@@ -1,6 +1,6 @@
 <?php
 
-namespace Botnyx\SimpleObject;
+namespace Botnyx;
 
 use Respect\Validation\Validator as v;
 
