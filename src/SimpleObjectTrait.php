@@ -41,27 +41,19 @@ trait SimpleObjectTrait  {
 	
 	function __get($property){
 		$this->_isProperty($property);
-		if(!isset($this->$property)){ throw new \Exception("Invalid property for Object (`".$p."`)"); }
+		if(!isset($this->$property)){ throw new \Exception("Invalid property for Object (`".$property."`)"); }
 		return $this->$property;
 	}
 	function _writeable(){
 		return false;
 	}	
 	function __set($property, $value){
-		//echo "Set property :".$property." to ".$value."<br>";
-		//print_r($value);
-		
 		$this->_isProperty($property);
 		if(isset($this->$property) && $this->_writeable()==false ){ 
 			throw new \Exception("Property `".$property."` already set.");
 		}
-		//$value['required'];
-		//$value['value'];
-		//$value['type'];
 		$validationType = $this->objectProperties()[$property]['type'];
-		
 		$this->_variableValidation($validationType,$value);
-		
 		$this->$property = $value;
 	}
 	
@@ -130,7 +122,6 @@ trait SimpleObjectTrait  {
 				break;
 			default:
 				throw new \Exception("No such validator `".$type."`");
-				//echo "Your favorite color is neither red, blue, nor green!";
 		}
 		if($result==false){
 			throw new \Exception("Validation error: '".$type."'");
