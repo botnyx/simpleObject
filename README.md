@@ -8,10 +8,6 @@ A simpleObject can be created by passing an array, object or json to the constru
 Handy for creating custom data objects which require specific values - or have default values.
 
 
-Usage:
-
-Create your own custom object.
-
 the following types are available to validate the input of the property.
 		
     string
@@ -34,6 +30,11 @@ the following types are available to validate the input of the property.
     alpha
     nowhitespace
     ip
+
+
+Usage:
+
+Create your own custom object.
 
 <pre>
 
