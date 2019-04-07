@@ -4,8 +4,6 @@ SimpleObject allows you to create simple objects with minimal (yet sufficient) v
 
 A simpleObject can be created by passing an array, object or json to the constructor.
 
-Once a property is set, it cannot be altered.
-
 
 Handy for creating custom data objects which require specific values - or have default values.
 
@@ -49,4 +47,4 @@ print_r($MyObject->asJson());
 </pre>
 
 
-</pre>
+Once a property is set, it cannot be altered.
