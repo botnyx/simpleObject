@@ -10,7 +10,31 @@ Handy for creating custom data objects which require specific values - or have d
 
 Usage:
 
-Create your own custom object
+Create your own custom object.
+
+the following types are available to validate the input of the property.
+		
+    string
+    int
+    bool
+    float
+    array
+    object
+    
+    url
+    domain
+    tld
+    email
+    countrycode
+    languagecode
+    date
+    lowercase
+    uppercase
+    phone
+    alpha
+    nowhitespace
+    ip
+
 <pre>
 
 class myObject extends Botnyx\SimpleObject {
